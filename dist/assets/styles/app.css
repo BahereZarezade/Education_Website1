@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.7rem;
 }
 
 /* Main Styling */
@@ -29,32 +30,45 @@ body .container {
 header .top {
   width: 100%;
   height: 50px;
-  background: #27cd27;
+  background: #fd7013;
+  position: fixed;
 }
 header .top h1 {
-  color: #01531a;
+  color: #ffffff;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  padding: 13px;
 }
 
 section#index .box {
+  margin-top: 50px;
   width: 100%;
-  background: #01a3a4;
+  background: #393e46;
   padding: 20px;
   float: right;
 }
 section#index .box .right {
-  width: 47%;
-  background: #1dd1a1;
   float: right;
+  width: 47%;
+}
+section#index .box .right1 {
+  background: #eeeeee;
   padding: 20px;
-  line-height: 30px;
+  border-radius: 10px;
+}
+section#index .box .right2 {
+  margin-top: 10px;
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  height: 128px;
 }
 section#index .box .left {
   width: 47%;
-  background: #1dd1a1;
+  background: #eeeeee;
   float: left;
   padding: 20px;
+  border-radius: 10px;
 }
 section#index .right h2 {
   text-align: center;
@@ -65,8 +79,7 @@ section#index .left h2 {
   font-size: 20px;
 }
 section#index .right p {
-  color: #fff;
-  text-align: center;
+  color: black;
   margin-top: 20px;
   text-align: right;
 }
@@ -75,8 +88,64 @@ section#index .right a {
   text-decoration: none;
 }
 section#index .left img {
-  max-width: 50%;
+  max-width: 100%;
   float: left;
+  height: 50%;
+}
+
+section#main .main {
+  width: 100%;
+  background: #222831;
+  padding: 20px;
+  float: right;
+}
+section#main .main .myform {
+  width: 47%;
+  background: #eeeeee;
+  float: right;
+  padding: 20px;
+}
+section#main .main .myform input[type=text],
+section#main .main .myform input[type=email],
+section#main .main .myform input[type=password],
+section#main .main .myform textarea {
+  width: 80%;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: #c8d6e5;
+  margin: 0px 30px 0px 0;
+}
+section#main .main .myform label {
+  display: block;
+  margin: 20px 30px 10px 0;
+}
+section#main .main .myform textarea {
+  max-width: 100%;
+  height: 150px;
+}
+section#main .main .gender {
+  margin: 20px 30px 10px 0;
+}
+section#main .main .gender input[type=radio] {
+  margin: 0px 30px 0px 0;
+}
+section#main .main .gender label {
+  display: inline;
+  margin: 20px 0px 10px 20px;
+}
+section#main .main .gender input[type=radio] {
+  margin: 20px 5px 10px 20px;
+}
+section#main .main .skill {
+  margin: 20px 30px 10px 0;
+}
+section#main .main .skill label {
+  cursor: pointer;
+  display: inline;
+  margin: 20px 0px 10px 20px;
+}
+section#main .main .skill input {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
