@@ -78,12 +78,8 @@ section#index {
     font-size: 20px;
     text-decoration: none;
   }
-  img {
-    width: 50%;
+  .left img {
+    max-width: 50%;
     float: left;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-
   }
 }

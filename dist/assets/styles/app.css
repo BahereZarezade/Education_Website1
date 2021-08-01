@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -15,13 +14,11 @@ body {
   overflow-x: hidden;
   /* Utility Classes */
 }
-
 html .RightToLeft,
 body .RightToLeft {
   direction: rtl;
   text-align: right;
 }
-
 html .container,
 body .container {
   margin: auto;
@@ -34,7 +31,6 @@ header .top {
   height: 50px;
   background: #27cd27;
 }
-
 header .top h1 {
   color: #01531a;
   text-align: center;
@@ -47,7 +43,6 @@ section#index .box {
   padding: 20px;
   float: right;
 }
-
 section#index .box .right {
   width: 47%;
   background: #1dd1a1;
@@ -55,50 +50,33 @@ section#index .box .right {
   padding: 20px;
   line-height: 30px;
 }
-
 section#index .box .left {
   width: 47%;
   background: #1dd1a1;
   float: left;
   padding: 20px;
 }
-
 section#index .right h2 {
   text-align: center;
   font-size: 20px;
 }
-
 section#index .left h2 {
   text-align: center;
   font-size: 20px;
 }
-
 section#index .right p {
   color: #fff;
   text-align: center;
   margin-top: 20px;
   text-align: right;
 }
-
 section#index .right a {
   font-size: 20px;
   text-decoration: none;
 }
-
-section#index img {
-  width: 50%;
+section#index .left img {
+  max-width: 50%;
   float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-line-pack: center;
-  align-content: center;
 }
-
-/*# sourceMappingURL=app.css.map */
 
 /*# sourceMappingURL=app.css.map */
