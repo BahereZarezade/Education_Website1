@@ -268,7 +268,7 @@ header .container .sign a i {
 
 span {
   position: relative;
-  bottom: 8px;
+  bottom: 1px;
 }
 
 .line {
@@ -373,7 +373,7 @@ span {
   font-weight: bold;
 }
 .tv .box-tv .tv-right .more-tv a:hover {
-  background: #000000;
+  background: #2e2e2e;
   border: 2px solid #393E46;
   color: #ececec;
 }

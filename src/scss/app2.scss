@@ -280,7 +280,7 @@ header {
 }
 span {
   position: relative;
-  bottom: 8px;
+  bottom: 1px;
 }
 .line {
   width: 100%;
@@ -383,7 +383,7 @@ span {
           padding: 9px;
           font-weight: bold;
           &:hover{
-            background: #000000;
+            background: #2e2e2e;
             border: 2px solid #393E46;
             color: #ececec;
           }
