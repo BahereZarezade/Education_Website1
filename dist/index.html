@@ -15,12 +15,25 @@
     <main class="text-right">
 
         <!--Header-->
-        <header>
+        <header class="fixed-top">
             <div class="top">
                 <h1>وب سایت آموزش برنامه نویسی فرانت اند</h1>
             </div>
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="#index">صفحه اصلی</a></li>
+                    <li><a href="#index">درباره ما</a></li>
+                    <li><a href="#index">تماس با ما </a></li>
+                    <li><a href="#index">همکاری با ما </a></li>
+                    <li><a href="#index">خدمات ما </a></li>
+                </ul>
+            </div>
         </header>
+        <!--End menu-->
         <!--End Header-->
+
+
 
         <!--index-->
         <section id="index">
@@ -70,15 +83,23 @@
                         <label for="">پسورد شما:</label>
                         <input type="password" placeholder="پسورد شما:"><br><br>
 
+                        <label for="">مدرک تحصیلی شما:</label>
+                        <select name="" id="">
+                            <option value="">دیپلم</option>
+                            <option value="">لیسانس</option>
+                            <option value="">فوق لیسانس</option>
+                            <option value="">دکترا</option>
+                        </select>
+
                         <div class="gender">
                             <label for="">جنسیت:</label>
-                            آقا:<input type="radio" name="gender" value="male">
+                            آقا:<input type="radio" name="gender" value="male" checked>
                             خانم:<input type="radio" name="gender" value="female"><br><br>
                         </div>
 
                         <div class="skill">مهارت های شما: <br><br>
                             <label for="front-end">فرانت اند</label>
-                            <input type="checkbox" name="front-end" id="front-end"><br><br>
+                            <input type="checkbox" name="front-end" id="front-end" checked><br><br>
 
                             <label for="back-end">بک اند</label>
                             <input type="checkbox" name="back-end" id="back-end"><br><br>
@@ -91,8 +112,16 @@
                         <label for="">توضیحات: </label>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
 
+                        <input type="submit" value="ارسال">
+                        <button>بازگشت</button>
 
                     </form>
+                </div>
+
+
+                <div class="pedar">
+                    <div class="farzand"></div>
+                    <div class="farzand2"></div>
                 </div>
             </div>
         </section>

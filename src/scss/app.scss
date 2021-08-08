@@ -4,48 +4,89 @@
 @import "../vendors/bootstrap-5.0.0/scss/mixins";
 
 /* Reset */
+@font-face {
+  font-family: "iransans";
+  src: url("fonts/IRANSansWeb.ttf") format("truetype"),
+    url("fonts/IRANSansWeb.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.7rem;
+  border: 0;
 }
 /* Main Styling */
-html,
 body {
-  background-color: #c8d6e5;
+  color: #b4b4b4;
+  font-family: "iransans";
+  line-height: 30px;
   /* حذف اسکرول افقی */
   overflow-x: hidden;
   .RightToLeft {
     direction: rtl;
     text-align: right;
+    font-size: 14px;
   }
   /* Utility Classes */
-  .container {
-    margin: auto;
-    max-width: 1100px;
-    text-align: right;
+  a {
+    transition: all 0.2s ease-in-out;
   }
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+.container {
+  width: 1366px;
+  text-align: right;
+  margin: auto;
 }
 //**********************************header****************************************
 header {
+  width: 100%;
   .top {
-    width: 100%;
     height: 50px;
-    background: #fd7013;
-    position: fixed;
+    background: #eeeeee;
     h1 {
-      color: #ffffff;
+      color: #393e46;
       text-align: center;
       font-size: 20px;
       padding: 13px;
+    }
+  }
+  .menu {
+    background: #fd7013;
+    float: right;
+    width: 100%;
+    li {
+      //float: right; or display: inline-block;
+      float: right;
+      list-style: none;
+      a {
+        color: #eeeeee;
+        display: inline-block;
+        padding: 10px 50px 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.5s;
+        &:hover {
+          background: #393e46;
+          color: #eeeeee;
+          border-radius: 5px;
+        }
+      }
     }
   }
 }
 //**********************************index****************************************
 section#index {
   .box {
-    margin-top: 50px;
+    margin-top: 97px;
     width: 100%;
     background: #393e46;
     padding: 20px;
@@ -77,15 +118,18 @@ section#index {
   .right h2 {
     text-align: center;
     font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
   }
   .left h2 {
     text-align: center;
     font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
   }
   .right p {
     color: rgb(0, 0, 0);
     margin-top: 20px;
     text-align: right;
+    text-shadow: 1px 1px 0.5px rgb(100, 100, 100);
   }
   .right a {
     font-size: 20px;
@@ -95,6 +139,10 @@ section#index {
     max-width: 100%;
     float: left;
     height: 50%;
+    transition: 0.75s;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 //**********************************main****************************************
@@ -112,7 +160,8 @@ section#main {
       input[type="text"],
       input[type="email"],
       input[type="password"],
-      textarea {
+      textarea,
+      select {
         //display: block;
         width: 80%;
         padding: 5px;
@@ -129,32 +178,106 @@ section#main {
         max-width: 100%;
         height: 150px;
       }
-    }
-
-    .gender {
-      margin: 20px 30px 10px 0;
-      input[type="radio"] {
+      .gender {
+        margin: 20px 30px 10px 0;
+        input[type="radio"] {
+          margin: 0px 30px 0px 0;
+        }
+        label {
+          display: inline;
+          margin: 20px 0px 10px 20px;
+        }
+        input[type="radio"] {
+          margin: 20px 5px 10px 20px;
+        }
+      }
+      .skill {
+        margin: 20px 30px 10px 0;
+        label {
+          cursor: pointer;
+          display: inline;
+          margin: 20px 0px 10px 0px;
+        }
+        input[type="checkbox"] {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+      }
+      input[type="submit"],
+      button {
+        width: 93px;
+        height: 50px;
+        font-size: 14px;
+        display: inline;
+        cursor: pointer;
         margin: 0px 30px 0px 0;
+        background: #fd7013;
+        color: #fff;
+        padding: 10px 25px;
+        border-radius: 10px;
+        border: 1px solid #eeeeee;
+        transition: 0.5s;
+        &:hover {
+          background: #cf5300;
+        }
       }
-      label {
-        display: inline;
-        margin: 20px 0px 10px 20px;
-      }
-      input[type="radio"] {
-        margin: 20px 5px 10px 20px;
+      button {
+        background: #393e46;
+        &:hover {
+          background: #222831;
+        }
       }
     }
 
-    .skill {
-      margin: 20px 30px 10px 0;
-      label {
-        cursor: pointer;
-        display: inline;
-        margin: 20px 0px 10px 20px;
+    .pedar {
+      width: 47%;
+      height: 500px;
+      background: #eeeeee;
+      float: left;
+      padding: 20px;
+      position: relative;
+      //box-shadow: 5px 5px 20px #fff;
+      .farzand {
+        position: absolute;
+        top: 100px;
+        right: 80px;
+        width: 70px;
+        height: 70px;
+        background: #ff0000;
       }
-      input{
-        cursor: pointer;
+      .farzand2 {
+        position: absolute;
+        top: 120px;
+        right: 100px;
+        width: 70px;
+        height: 70px;
+        background: #66ff00;
       }
     }
   }
 }
+
+//**********************************index2****************************************
+section#index2 {
+  background: lightcoral;
+  .parrent {
+    background: #393e46;
+    padding: 30px;
+    //float: left;
+    //width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    //display: inline-flex;
+    //flex-direction: column-reverse;
+    .child {
+      background: #2c7dd4;
+      margin: 15px;
+      padding: 15px;
+      text-align: center;
+      font-size: 28px;
+      width: 320px;
+      //float: left;
+    }
+  }
+}
+

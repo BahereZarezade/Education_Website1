@@ -1,47 +1,86 @@
 @charset "UTF-8";
 /* Reset */
+@font-face {
+  font-family: "iransans";
+  src: url("fonts/IRANSansWeb.ttf") format("truetype"), url("fonts/IRANSansWeb.woff") format("woff");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.7rem;
+  border: 0;
 }
 
 /* Main Styling */
-html,
 body {
-  background-color: #c8d6e5;
+  color: #b4b4b4;
+  font-family: "iransans";
+  line-height: 30px;
   /* حذف اسکرول افقی */
   overflow-x: hidden;
   /* Utility Classes */
 }
-html .RightToLeft,
 body .RightToLeft {
   direction: rtl;
   text-align: right;
+  font-size: 14px;
 }
-html .container,
-body .container {
-  margin: auto;
-  max-width: 1100px;
-  text-align: right;
+body a {
+  transition: all 0.2s ease-in-out;
+}
+body .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
-header .top {
+.container {
+  width: 1366px;
+  text-align: right;
+  margin: auto;
+}
+
+header {
   width: 100%;
+}
+header .top {
   height: 50px;
-  background: #fd7013;
-  position: fixed;
+  background: #eeeeee;
 }
 header .top h1 {
-  color: #ffffff;
+  color: #393e46;
   text-align: center;
   font-size: 20px;
   padding: 13px;
 }
+header .menu {
+  background: #fd7013;
+  float: right;
+  width: 100%;
+}
+header .menu li {
+  float: right;
+  list-style: none;
+}
+header .menu li a {
+  color: #eeeeee;
+  display: inline-block;
+  padding: 10px 50px 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+header .menu li a:hover {
+  background: #393e46;
+  color: #eeeeee;
+  border-radius: 5px;
+}
 
 section#index .box {
-  margin-top: 50px;
+  margin-top: 97px;
   width: 100%;
   background: #393e46;
   padding: 20px;
@@ -73,15 +112,18 @@ section#index .box .left {
 section#index .right h2 {
   text-align: center;
   font-size: 20px;
+  text-shadow: 1px 1px 1px black;
 }
 section#index .left h2 {
   text-align: center;
   font-size: 20px;
+  text-shadow: 1px 1px 1px black;
 }
 section#index .right p {
   color: black;
   margin-top: 20px;
   text-align: right;
+  text-shadow: 1px 1px 0.5px #646464;
 }
 section#index .right a {
   font-size: 20px;
@@ -91,6 +133,10 @@ section#index .left img {
   max-width: 100%;
   float: left;
   height: 50%;
+  transition: 0.75s;
+}
+section#index .left img:hover {
+  opacity: 0.5;
 }
 
 section#main .main {
@@ -108,7 +154,8 @@ section#main .main .myform {
 section#main .main .myform input[type=text],
 section#main .main .myform input[type=email],
 section#main .main .myform input[type=password],
-section#main .main .myform textarea {
+section#main .main .myform textarea,
+section#main .main .myform select {
   width: 80%;
   padding: 5px;
   border-radius: 10px;
@@ -123,29 +170,97 @@ section#main .main .myform textarea {
   max-width: 100%;
   height: 150px;
 }
-section#main .main .gender {
+section#main .main .myform .gender {
   margin: 20px 30px 10px 0;
 }
-section#main .main .gender input[type=radio] {
+section#main .main .myform .gender input[type=radio] {
   margin: 0px 30px 0px 0;
 }
-section#main .main .gender label {
+section#main .main .myform .gender label {
   display: inline;
   margin: 20px 0px 10px 20px;
 }
-section#main .main .gender input[type=radio] {
+section#main .main .myform .gender input[type=radio] {
   margin: 20px 5px 10px 20px;
 }
-section#main .main .skill {
+section#main .main .myform .skill {
   margin: 20px 30px 10px 0;
 }
-section#main .main .skill label {
+section#main .main .myform .skill label {
   cursor: pointer;
   display: inline;
-  margin: 20px 0px 10px 20px;
+  margin: 20px 0px 10px 0px;
 }
-section#main .main .skill input {
+section#main .main .myform .skill input[type=checkbox] {
   cursor: pointer;
+  margin-right: 10px;
+}
+section#main .main .myform input[type=submit],
+section#main .main .myform button {
+  width: 93px;
+  height: 50px;
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin: 0px 30px 0px 0;
+  background: #fd7013;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+  transition: 0.5s;
+}
+section#main .main .myform input[type=submit]:hover,
+section#main .main .myform button:hover {
+  background: #cf5300;
+}
+section#main .main .myform button {
+  background: #393e46;
+}
+section#main .main .myform button:hover {
+  background: #222831;
+}
+section#main .main .pedar {
+  width: 47%;
+  height: 500px;
+  background: #eeeeee;
+  float: left;
+  padding: 20px;
+  position: relative;
+}
+section#main .main .pedar .farzand {
+  position: absolute;
+  top: 100px;
+  right: 80px;
+  width: 70px;
+  height: 70px;
+  background: #ff0000;
+}
+section#main .main .pedar .farzand2 {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: 70px;
+  height: 70px;
+  background: #66ff00;
+}
+
+section#index2 {
+  background: lightcoral;
+}
+section#index2 .parrent {
+  background: #393e46;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+section#index2 .parrent .child {
+  background: #2c7dd4;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+  width: 320px;
 }
 
 /*# sourceMappingURL=app.css.map */
