@@ -374,7 +374,7 @@ span {
 }
 .tv .box-tv .tv-right .more-tv a:hover {
   background: #2e2e2e;
-  border: 2px solid #393E46;
+  border: 2px solid #393e46;
   color: #ececec;
 }
 .tv .box-tv .tv-left {
@@ -428,6 +428,43 @@ span {
   top: 25.5%;
   left: 45.5%;
   opacity: 1;
+}
+
+.article {
+  float: right;
+  width: 100%;
+  margin-top: 30px;
+}
+.article .article-head {
+  float: right;
+  width: 100%;
+}
+.article .article-head .article-title {
+  float: right;
+}
+.article .article-head .article-title h2 {
+  font-size: 18px;
+}
+.article .article-head .article-title h5 {
+  font-size: 15px;
+  color: #929394;
+}
+.article .article-head .article-link {
+  float: left;
+  margin-top: 5px;
+}
+.article .article-head .article-link a {
+  border: 2px solid #fd7013;
+  color: #fd7013;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.article .article-head .article-link a:hover {
+  background: #fd7013;
+  color: #fff;
 }
 
 /*# sourceMappingURL=app2.css.map */

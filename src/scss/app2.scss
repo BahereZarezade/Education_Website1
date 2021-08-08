@@ -289,7 +289,7 @@ span {
   background: rgb(209, 209, 209);
   margin: 35px 0;
 }
-///////////////////////////////section tv//////////////////////
+///////////////////////////////section tv//////////////////////////
 .tv {
   float: right;
   width: 100%;
@@ -382,9 +382,9 @@ span {
           border-radius: 6px;
           padding: 9px;
           font-weight: bold;
-          &:hover{
+          &:hover {
             background: #2e2e2e;
-            border: 2px solid #393E46;
+            border: 2px solid #393e46;
             color: #ececec;
           }
         }
@@ -442,6 +442,44 @@ span {
               opacity: 1;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////section article//////////////////////////
+.article {
+  float: right;
+  width: 100%;
+  margin-top: 30px;
+  .article-head {
+    float: right;
+    width: 100%;
+    .article-title {
+      float: right;
+      h2 {
+        font-size: 18px;
+      }
+      h5 {
+        font-size: 15px;
+        color: #929394;
+      }
+    }
+    .article-link {
+      float: left;
+      margin-top: 5px;
+      a {
+        border: 2px solid #fd7013;
+        color: #fd7013;
+        font-size: 12px;
+        text-decoration: none;
+        padding: 3px 6px;
+        display: inline-block;
+        border-radius: 5px;
+        &:hover {
+          background: #fd7013;
+          color: #fff;
         }
       }
     }
