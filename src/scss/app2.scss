@@ -383,9 +383,9 @@ span {
           padding: 9px;
           font-weight: bold;
           &:hover {
-            background: #2e2e2e;
-            border: 2px solid #393e46;
-            color: #ececec;
+            background: #ffffff;
+            border: 2px solid #fd7013;
+            color: #fd7013;
           }
         }
       }
@@ -452,18 +452,19 @@ span {
 .article {
   float: right;
   width: 100%;
-  margin-top: 30px;
   .article-head {
     float: right;
     width: 100%;
     .article-title {
       float: right;
+      margin-right: 44%;
       h2 {
-        font-size: 18px;
+        font-size: 23px;
       }
       h5 {
-        font-size: 15px;
+        font-size: 17px;
         color: #929394;
+        text-align: center;
       }
     }
     .article-link {
@@ -486,7 +487,7 @@ span {
   }
 }
 
-///////////////////////////////class article//////////////////////////
+///////////////////////////////section article//////////////////////////
 .article-slider {
   float: right;
   width: 100%;
@@ -494,10 +495,16 @@ span {
   margin-top: 25px;
 }
 .box-article {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dddbdb;
+  border-radius: 10px;
 }
 .box-article img {
-  height: 250px !important; 
+  height: 250px !important;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 .box-article h6 {
   font-size: 14px;
@@ -510,18 +517,21 @@ span {
   font-weight: bolder;
   display: block;
 }
+.btn-more a {
+  border: 0;
+  border-top: 1px solid #fd7013;
+  border-radius: 0 0 10px 10px;
+}
 .box-article:hover .btn-more a {
   background: #ffffff;
   color: #fd7013;
   border: 1px solid #fd7013;
+  border-radius: 0 0 10px 10px;
 }
 .box-article p {
   color: #777;
   padding: 0 12px;
   font-size: 13px;
-}
-.box-article .btn-more {
-  border: 1px solid #fd7013;
 }
 .box-article .btn-more a {
   background: #fd7013;
@@ -562,3 +572,72 @@ span {
   width: 20px !important;
   transition: all 0.4s ease-in-out;
 }
+///////////////////////////////section adv///////////////////////////
+.adv {
+  float: right;
+  width: 100%;
+  background: linear-gradient(to left, #222831, #4d5158);
+  .right-adv {
+    float: right;
+    width: 48%;
+    padding-top: 45px;
+    float: right;
+    h2 {
+      font-size: 24px;
+      color: #fff;
+    }
+    h5 {
+      font-size: 16px;
+      margin-top: 30px;
+      color: #adadad;
+    }
+    p {
+      padding-top: 20px;
+      line-height: 39px;
+      color: #cacaca;
+      display: inline-block;
+    }
+  }
+  .btn_more {
+    width: 100%;
+    .btn_more_right {
+      width: 70%;
+      float: right;
+    }
+    .btn_more_left{
+      width:30%;
+      float:left ;
+      a {
+        text-decoration: none;
+        background: #fd7013;
+        padding: 10px 20px;
+        display: inline-block;
+        color: #fff;
+        border-radius: 10px;
+        margin: 10px 10px 30px 0px;
+        font-weight: bold;
+        &:hover {
+          background: #fff;
+          color: #fd7013;
+        }
+      }
+    }
+  }
+  .left-adv {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    img {
+      max-width: 100%;
+      display: inline-block;
+      padding-top: 48px;
+      opacity: 0.5;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+///////////////////////////////section adv///////////////////////////
