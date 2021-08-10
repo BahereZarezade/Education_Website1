@@ -4,11 +4,12 @@
   font-family: "iransans";
   src: url("fonts/IRANSansWeb.ttf") format("truetype"), url("fonts/IRANSansWeb.woff") format("woff");
 }
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   line-height: 1.7rem;
   border: 0;
 }
@@ -176,9 +177,9 @@ section#main .main .myform {
   padding: 20px;
 }
 
-section#main .main .myform input[type=text],
-section#main .main .myform input[type=email],
-section#main .main .myform input[type=password],
+section#main .main .myform input[type="text"],
+section#main .main .myform input[type="email"],
+section#main .main .myform input[type="password"],
 section#main .main .myform textarea,
 section#main .main .myform select {
   width: 80%;
@@ -202,7 +203,7 @@ section#main .main .myform .gender {
   margin: 20px 30px 10px 0;
 }
 
-section#main .main .myform .gender input[type=radio] {
+section#main .main .myform .gender input[type="radio"] {
   margin: 0px 30px 0px 0;
 }
 
@@ -211,7 +212,7 @@ section#main .main .myform .gender label {
   margin: 20px 0px 10px 20px;
 }
 
-section#main .main .myform .gender input[type=radio] {
+section#main .main .myform .gender input[type="radio"] {
   margin: 20px 5px 10px 20px;
 }
 
@@ -225,12 +226,12 @@ section#main .main .myform .skill label {
   margin: 20px 0px 10px 0px;
 }
 
-section#main .main .myform .skill input[type=checkbox] {
+section#main .main .myform .skill input[type="checkbox"] {
   cursor: pointer;
   margin-right: 10px;
 }
 
-section#main .main .myform input[type=submit],
+section#main .main .myform input[type="submit"],
 section#main .main .myform button {
   width: 93px;
   height: 50px;
@@ -247,7 +248,7 @@ section#main .main .myform button {
   transition: 0.5s;
 }
 
-section#main .main .myform input[type=submit]:hover,
+section#main .main .myform input[type="submit"]:hover,
 section#main .main .myform button:hover {
   background: #cf5300;
 }
@@ -298,7 +299,7 @@ section#index2 .parrent {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section#index2 .parrent .child {
@@ -309,7 +310,4 @@ section#index2 .parrent .child {
   font-size: 28px;
   width: 320px;
 }
-
-/*# sourceMappingURL=app.css.map */
-
 /*# sourceMappingURL=app.css.map */

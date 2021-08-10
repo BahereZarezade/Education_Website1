@@ -53,6 +53,14 @@ body {
   text-align: right;
   margin: auto;
 }
+.line {
+  width: 100%;
+  height: 1px;
+  float: right;
+  background: rgb(209, 209, 209);
+  margin: 50px 0;
+  box-shadow: 0px 1px 5px #b4b2b2;
+}
 //**********************************index3****************************************
 //////////////////////////////div class top-menu////////////////////////////
 .top-menu {
@@ -235,6 +243,7 @@ header {
         display: inline-block;
         font-size: 14px;
         border-radius: 7px;
+        font-weight: bold;
         &:hover {
           background: #fd7013;
           i {
@@ -248,49 +257,41 @@ header {
     }
   }
 }
-
-/////////////////////////section slider//////////////////////////
-.box-slider {
+/////////////////////////section box-slider//////////////////////////
+section.box-slider {
   float: right;
   width: 100%;
   direction: ltr;
   margin-top: 4px;
-}
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  height: 450px;
-}
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
-  position: absolute;
-  top: 33%;
-  font-size: 60px;
-  padding: 15px !important;
-  background: #000;
-  opacity: 0.4;
-  color: #ddd;
-}
-.owl-carousel .owl-nav button.owl-next {
-  right: 0;
-}
-.owl-carousel .owl-nav button.owl-prev {
-  left: 0;
-}
-span {
-  position: relative;
-  bottom: 1px;
-}
-.line {
-  width: 100%;
-  height: 1px;
-  float: right;
-  background: rgb(209, 209, 209);
-  margin: 35px 0;
-  box-shadow: 0px 1px 5px #b4b2b2;
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 450px;
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 33%;
+    font-size: 60px;
+    padding: 15px !important;
+    background: #000;
+    opacity: 0.4;
+    color: #ddd;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+  }
+  span {
+    position: relative;
+    bottom: 1px;
+  }
 }
 ///////////////////////////////section tv//////////////////////////
-.tv {
+section.tv {
   float: right;
   width: 100%;
   margin-top: 30px;
@@ -301,6 +302,7 @@ span {
       float: right;
       h2 {
         font-size: 18px;
+        font-weight: bold;
       }
       h5 {
         font-size: 15px;
@@ -447,19 +449,19 @@ span {
     }
   }
 }
-
 ///////////////////////////////section article//////////////////////////
-.article {
+section.article {
   float: right;
   width: 100%;
   .article-head {
-    float: right;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     .article-title {
-      float: right;
-      margin-right: 44%;
       h2 {
         font-size: 23px;
+        text-align: center;
+        font-weight: bold;
       }
       h5 {
         font-size: 17px;
@@ -468,8 +470,7 @@ span {
       }
     }
     .article-link {
-      float: left;
-      margin-top: 5px;
+      //margin-top: 5px;
       a {
         border: 2px solid #fd7013;
         color: #fd7013;
@@ -485,98 +486,97 @@ span {
       }
     }
   }
-}
+  .article-slider {
+    float: right;
+    width: 100%;
+    direction: ltr;
+    margin-top: 25px;
+  }
+  .box-article {
+    border: 1px solid #dddbdb;
+    border-radius: 10px;
+  }
+  .box-article img {
+    height: 250px !important;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .box-article h6 {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .box-article h6 a {
+    text-decoration: none;
+    color: #313131;
+    font-weight: bolder;
+    display: block;
+  }
+  .btn-more a {
+    border: 0;
+    border-top: 1px solid #fd7013;
+    border-radius: 0 0 10px 10px;
+  }
+  .box-article:hover .btn-more a {
+    background: #ffffff;
+    color: #fd7013;
+    border: 1px solid #fd7013;
+    border-radius: 0 0 10px 10px;
+  }
+  .box-article p {
+    color: #777;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+  .box-article .btn-more a {
+    background: #fd7013;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 4px;
+  }
 
-///////////////////////////////section article//////////////////////////
-.article-slider {
-  float: right;
-  width: 100%;
-  direction: ltr;
-  margin-top: 25px;
-}
-.box-article {
-  border: 1px solid #dddbdb;
-  border-radius: 10px;
-}
-.box-article img {
-  height: 250px !important;
-  border-radius: 10px 10px 0 0;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    opacity: 0.8;
+  .article-slider .owl-carousel .owl-nav button.owl-next,
+  .article-slider .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+    padding: 11px 18px !important;
+    color: #afafaf;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 6px #ddd;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  #multi_slider:hover .owl-nav button.owl-next,
+  #multi_slider:hover .owl-nav button.owl-prev {
+    visibility: visible;
+    opacity: 1;
+  }
+  .article-slider .owl-carousel .owl-nav button.owl-next {
+    right: -25px;
+  }
+  .article-slider .owl-carousel .owl-nav button.owl-prev {
+    left: -25px;
+  }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: #fd7013 !important;
+    width: 20px !important;
+    transition: all 0.4s ease-in-out;
   }
 }
-.box-article h6 {
-  font-size: 14px;
-  text-align: center;
-  padding: 15px 10px;
-}
-.box-article h6 a {
-  text-decoration: none;
-  color: #313131;
-  font-weight: bolder;
-  display: block;
-}
-.btn-more a {
-  border: 0;
-  border-top: 1px solid #fd7013;
-  border-radius: 0 0 10px 10px;
-}
-.box-article:hover .btn-more a {
-  background: #ffffff;
-  color: #fd7013;
-  border: 1px solid #fd7013;
-  border-radius: 0 0 10px 10px;
-}
-.box-article p {
-  color: #777;
-  padding: 0 12px;
-  font-size: 13px;
-}
-.box-article .btn-more a {
-  background: #fd7013;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 4px;
-}
-
-.article-slider .owl-carousel .owl-nav button.owl-next,
-.article-slider .owl-carousel .owl-nav button.owl-prev {
-  position: absolute;
-  top: 20%;
-  font-size: 50px;
-  padding: 11px 18px !important;
-  color: #afafaf;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0px 0px 6px #ddd;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-#multi_slider:hover .owl-nav button.owl-next,
-#multi_slider:hover .owl-nav button.owl-prev {
-  visibility: visible;
-  opacity: 1;
-}
-.article-slider .owl-carousel .owl-nav button.owl-next {
-  right: -25px;
-}
-.article-slider .owl-carousel .owl-nav button.owl-prev {
-  left: -25px;
-}
-.owl-theme .owl-dots .owl-dot.active span {
-  background: #fd7013 !important;
-  width: 20px !important;
-  transition: all 0.4s ease-in-out;
-}
 ///////////////////////////////section adv///////////////////////////
-.adv {
+section.adv {
   float: right;
   width: 100%;
-  background: linear-gradient(to left, #222831, #4d5158);
+  background: linear-gradient(to left, #222831, #4d5157);
+  margin: 80px 0;
   .right-adv {
     float: right;
     width: 48%;
@@ -585,17 +585,20 @@ span {
     h2 {
       font-size: 24px;
       color: #fff;
+      text-shadow: 2px 3px 4px #ddd;
     }
     h5 {
       font-size: 16px;
       margin-top: 30px;
       color: #adadad;
+      text-shadow: 8px 8px 8px #000;
     }
     p {
       padding-top: 20px;
       line-height: 39px;
       color: #cacaca;
       display: inline-block;
+      text-shadow: 6px 6px 6px #000;
     }
   }
   .btn_more {
@@ -604,12 +607,13 @@ span {
       width: 70%;
       float: right;
     }
-    .btn_more_left{
-      width:30%;
-      float:left ;
+    .btn_more_left {
+      width: 30%;
+      float: left;
       a {
         text-decoration: none;
-        background: #fd7013;
+        text-shadow: 2px 3px 5px #000;
+        background: linear-gradient(to left, #fd7013, #fdbf13);
         padding: 10px 20px;
         display: inline-block;
         color: #fff;
@@ -627,17 +631,165 @@ span {
     float: left;
     width: 40%;
     padding: 10px;
-    img {
-      max-width: 100%;
-      display: inline-block;
-      padding-top: 48px;
-      opacity: 0.5;
-      border-radius: 10px;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        opacity: 1;
+    figure {
+      img {
+        max-width: 100%;
+        margin-top: 49px;
+        opacity: 0.5;
+        border-radius: 10px;
+        box-shadow: 8px 8px 7px #000;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
 }
-///////////////////////////////section adv///////////////////////////
+///////////////////////////////section course///////////////////////////
+section.course {
+  float: right;
+  width: 100%;
+  .course-head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .course-title {
+      h2 {
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+      }
+      h5 {
+        font-size: 17px;
+        color: #929394;
+        text-align: center;
+      }
+    }
+    .course-link {
+      a {
+        border: 2px solid #fd7013;
+        color: #fd7013;
+        font-size: 12px;
+        text-decoration: none;
+        padding: 3px 6px;
+        display: inline-block;
+        border-radius: 5px;
+        &:hover {
+          background: #fd7013;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .course-slider {
+    float: right;
+    width: 100%;
+    direction: ltr;
+    margin-top: 25px;
+  }
+  .box-course {
+    border: 1px solid #dddbdb;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      box-shadow: 8px 8px 7px #000;
+    }
+  }
+  .box-course img {
+    height: 250px !important;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .box-course h6 {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .box-course h6 a {
+    text-decoration: none;
+    color: #313131;
+    font-weight: bolder;
+    display: block;
+  }
+  .btn-more a {
+    border: 0;
+    border-top: 1px solid #fd7013;
+    border-radius: 0 0 10px 10px;
+  }
+  .box-course:hover .btn-more a {
+    background: #ffffff;
+    color: #fd7013;
+    border: 1px solid #fd7013;
+    border-radius: 0 0 10px 10px;
+  }
+  .desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 12px;
+    border-bottom: 1px solid #ddd;
+    p {
+      .rate {
+        i {
+        }
+      }
+    }
+  }
+
+  .detail {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 12px;
+    .price {
+      font-size: 12px;
+      del {
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+      ins {
+        font-size: 12px;
+        text-decoration: none;
+        background: #fd7013;
+        color: #fff;
+        padding: 5px 12px 5px;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+      span {
+        font-size: 12px;
+        text-decoration: none;
+        background: #019c3d;
+        color: #fff;
+        padding: 5px 12px 5px;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+    }
+    .users {
+      i {
+        margin-right: 2px;
+      }
+    }
+  }
+  .teacher {
+    span {
+      font-size: 14px !important;
+    }
+  }
+
+  .box-course .btn-more a {
+    background: #fd7013;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 4px;
+  }
+}

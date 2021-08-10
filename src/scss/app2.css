@@ -3,12 +3,13 @@
   font-family: "iransans";
   src: url("fonts/IRANSansWeb.ttf") format("truetype"), url("fonts/IRANSansWeb.woff") format("woff"), url("dist/assets/fonts/dana/dana-bold.woff2") format("woff"), url("dist/assets/fonts/dana/dana-bolditalic.woff2") format("woff"), url("dist/assets/fonts/dana/dana-regular.woff2") format("woff"), url("dist/assets/fonts/dana/dana-regularitalic.woff2") format("woff");
 }
+
 /************************ Reset *************************/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   line-height: 1.7rem;
   border: 0;
 }
@@ -59,7 +60,7 @@ body .fixed-top {
   background: #d1d1d1;
   margin: 50px 0;
   -webkit-box-shadow: 0px 1px 5px #b4b2b2;
-  box-shadow: 0px 1px 5px #b4b2b2;
+          box-shadow: 0px 1px 5px #b4b2b2;
 }
 
 .top-menu {
@@ -106,7 +107,7 @@ body .fixed-top {
   height: 27px;
   width: 27px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 10px 8px 7px 0px;
   padding: 7px 9px 0px 9px;
   border: 3px solid #fd7013;
@@ -126,7 +127,7 @@ body .fixed-top {
   background: #fd7013;
   border-radius: 3px;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
@@ -148,7 +149,7 @@ body .fixed-top {
   width: 100%;
   border: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 15px;
   color: inherit;
   background: transparent;
@@ -185,7 +186,7 @@ header {
   float: right;
   background: #eeeeee;
   -webkit-box-shadow: 0px 1px 6px #adadad;
-  box-shadow: 0px 1px 6px #adadad;
+          box-shadow: 0px 1px 6px #adadad;
   height: 68px;
 }
 
@@ -231,7 +232,7 @@ header .container .main-menu ul li ul {
   top: 115px;
   right: 0;
   -webkit-box-shadow: 0px 1px 6px #e6e6e6;
-  box-shadow: 0px 1px 6px #e6e6e6;
+          box-shadow: 0px 1px 6px #e6e6e6;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.2s ease-in-out;
@@ -517,12 +518,12 @@ section.article .article-head {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 section.article .article-head .article-title h2 {
@@ -626,7 +627,7 @@ section.article .article-slider .owl-carousel .owl-nav button.owl-prev {
   border-radius: 50%;
   background: #fff;
   -webkit-box-shadow: 0px 0px 6px #ddd;
-  box-shadow: 0px 0px 6px #ddd;
+          box-shadow: 0px 0px 6px #ddd;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -734,7 +735,7 @@ section.adv .left-adv figure img {
   opacity: 0.5;
   border-radius: 10px;
   -webkit-box-shadow: 8px 8px 7px #000;
-  box-shadow: 8px 8px 7px #000;
+          box-shadow: 8px 8px 7px #000;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -754,12 +755,12 @@ section.course .course-head {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 section.course .course-head .course-title h2 {
@@ -807,7 +808,7 @@ section.course .box-course:hover {
   cursor: pointer;
   opacity: 0.8;
   -webkit-box-shadow: 8px 8px 7px #000;
-  box-shadow: 8px 8px 7px #000;
+          box-shadow: 8px 8px 7px #000;
 }
 
 section.course .box-course img {
@@ -852,16 +853,16 @@ section.course .desc {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 16px 12px;
   border-bottom: 1px solid #ddd;
 }
 
 section.course .detail {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,7 +914,4 @@ section.course .box-course .btn-more a {
   color: #ffffff;
   padding: 4px;
 }
-
-/*# sourceMappingURL=app2.css.map */
-
 /*# sourceMappingURL=app2.css.map */
