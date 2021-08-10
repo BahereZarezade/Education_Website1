@@ -62,6 +62,11 @@ body .fixed-top {
   box-shadow: 0px 1px 5px #b4b2b2;
 }
 
+.fas,
+.fab {
+  margin-left: 10px;
+}
+
 .top-menu {
   width: 100%;
   float: right;
@@ -672,7 +677,7 @@ section.adv .right-adv {
 section.adv .right-adv h2 {
   font-size: 24px;
   color: #fff;
-  text-shadow: 2px 3px 4px #ddd;
+  text-shadow: 2px 2px 3px #ddd;
 }
 
 section.adv .right-adv h5 {
@@ -806,8 +811,6 @@ section.course .box-course {
 section.course .box-course:hover {
   cursor: pointer;
   opacity: 0.8;
-  -webkit-box-shadow: 8px 8px 7px #000;
-  box-shadow: 8px 8px 7px #000;
 }
 
 section.course .box-course img {
@@ -912,6 +915,134 @@ section.course .box-course .btn-more a {
   text-decoration: none;
   color: #ffffff;
   padding: 4px;
+}
+
+footer {
+  cursor: pointer;
+  background: #393e46;
+  width: 100%;
+  float: right;
+  padding-top: 50px;
+}
+
+footer h3 {
+  color: #eeeeee;
+  font-size: 20px;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #fd7013;
+}
+
+footer .about {
+  float: right;
+  width: 33%;
+  margin-left: 55px;
+}
+
+footer .about p {
+  color: #b4b4b4;
+  margin: 33px 0;
+  text-align: justify;
+  direction: rtl;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .about p:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+footer .f-menu {
+  float: right;
+  width: 28%;
+  margin-left: 55px;
+}
+
+footer .f-menu ul p {
+  color: #b4b4b4;
+  text-align: justify;
+  direction: rtl;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .f-menu ul p:hover {
+  color: #fff;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+footer .f-menu ul li {
+  list-style: none;
+  color: #b4b4b4;
+  line-height: 2.7rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .f-menu ul li a {
+  color: #b4b4b4;
+  text-decoration: none;
+}
+
+footer .f-menu ul li a:hover {
+  color: #fff;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+footer #f-menu2 {
+  margin-left: 0px;
+}
+
+footer #f-menu2 li:hover {
+  color: #fff;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+footer .copy-right {
+  float: right;
+  width: 100%;
+  background: #222831;
+  color: #eeeeee;
+  padding: 10px 0;
+}
+
+footer .copy-right p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .copy-right .sosial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .copy-right .sosial a:hover {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer .copy-right .sosial a i {
+  font-size: 30px;
+  padding: 5px 10px 20px 10px;
+}
+
+footer .copy-right .sosial a i:hover {
+  color: #fff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=app2.css.map */

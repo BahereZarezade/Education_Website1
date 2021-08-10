@@ -61,6 +61,10 @@ body {
   margin: 50px 0;
   box-shadow: 0px 1px 5px #b4b2b2;
 }
+.fas,
+.fab {
+  margin-left: 10px;
+}
 //**********************************index3****************************************
 //////////////////////////////div class top-menu////////////////////////////
 .top-menu {
@@ -585,7 +589,7 @@ section.adv {
     h2 {
       font-size: 24px;
       color: #fff;
-      text-shadow: 2px 3px 4px #ddd;
+      text-shadow: 2px 2px 3px #ddd;
     }
     h5 {
       font-size: 16px;
@@ -697,7 +701,6 @@ section.course {
     &:hover {
       cursor: pointer;
       opacity: 0.8;
-      box-shadow: 8px 8px 7px #000;
     }
   }
   .box-course img {
@@ -791,5 +794,109 @@ section.course {
     text-decoration: none;
     color: #ffffff;
     padding: 4px;
+  }
+}
+///////////////////////////////footer///////////////////////////
+footer {
+  cursor: pointer;
+  background: #393e46;
+  width: 100%;
+  float: right;
+  padding-top: 50px;
+  h3 {
+    color: #eeeeee;
+    font-size: 20px;
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fd7013;
+  }
+  .about {
+    float: right;
+    width: 33%;
+    margin-left: 55px;
+    p {
+      color: #b4b4b4;
+      margin: 33px 0;
+      text-align: justify;
+      direction: rtl;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+  .f-menu {
+    float: right;
+    width: 28%;
+    margin-left: 55px;
+    ul {
+      p {
+        color: #b4b4b4;
+        text-align: justify;
+        direction: rtl;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: #fff;
+          font-weight: bold;
+          padding-right: 10px;
+        }
+      }
+      li {
+        list-style: none;
+        color: #b4b4b4;
+        line-height: 2.7rem;
+        transition: all 0.3s ease-in-out;
+        a {
+          color: #b4b4b4;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+            font-weight: bold;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  #f-menu2 {
+    margin-left: 0px;
+    li {
+      &:hover {
+        color: #fff;
+        font-weight: bold;
+        padding-right: 10px;
+      }
+    }
+  }
+  .copy-right {
+    float: right;
+    width: 100%;
+    background: #222831;
+    color: #eeeeee;
+    padding: 10px 0;
+    p {
+      display: flex;
+      justify-content: center;
+    }
+    .sosial {
+      display: flex;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      a {
+        &:hover {
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+        i {
+          font-size: 30px;
+          padding: 5px 10px 20px 10px;
+          &:hover {
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 }
