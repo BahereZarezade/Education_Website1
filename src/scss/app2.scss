@@ -21,7 +21,10 @@
   border: 0;
 }
 /* Main Styling */
+html,
 body {
+  //font-size: 62.5%;
+  //font-size: calc(2.4rem + 1vw);
   color: #b4b4b4;
   //font-family: "iransans";
   font-family: "Vazir" !important;
@@ -40,16 +43,23 @@ body {
   i {
     color: #fd7013;
   }
-  .fixed-top {
+  .fixed-top1 {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
   }
+  .fixed-top2 {
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    z-index: 1040;
+  }
 }
 .container {
-  width: 1366px;
+  width: 1140px;
   text-align: right;
   margin: auto;
 }
@@ -68,7 +78,8 @@ body {
 //**********************************index3****************************************
 //////////////////////////////div class top-menu////////////////////////////
 .top-menu {
-  width: 100%;
+  width: 100vw;
+  font-size: calc(2.4rem + 2vw);
   float: right;
   background: #393e46;
   .container {
@@ -81,7 +92,7 @@ body {
         float: right;
         list-style: none;
         margin: 10px 0px 0px 30px;
-        font-size: 12px;
+        font-size: calc(0.5rem + 0.5vw);
         i {
           margin: 10px 7px;
           font-size: 25px;
@@ -170,7 +181,8 @@ body {
 }
 //////////////////////////////header class header////////////////////////////
 header {
-  width: 100%;
+  width: 100vw;
+  font-size: calc(2.4rem + 1vw);
   float: right;
   background: #eeeeee;
   box-shadow: 0px 1px 6px #adadad;
@@ -264,10 +276,10 @@ header {
 /////////////////////////section box-slider//////////////////////////
 section.box-slider {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(2.4rem + 1vw);
   direction: ltr;
-  margin-top: 4px;
-
+  margin-top: 8.5rem;
   .owl-carousel .owl-item img {
     display: block;
     width: 100%;
@@ -297,7 +309,8 @@ section.box-slider {
 ///////////////////////////////section tv//////////////////////////
 section.tv {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
   margin-top: 30px;
   .tv-head {
     float: right;
@@ -305,11 +318,11 @@ section.tv {
     .tv-title {
       float: right;
       h2 {
-        font-size: 18px;
+        font-size: calc(0.6rem + 0.8vw);
         font-weight: bold;
       }
       h5 {
-        font-size: 15px;
+        font-size: calc(0.5rem + 0.8vw);
         color: #929394;
       }
     }
@@ -319,7 +332,7 @@ section.tv {
       a {
         border: 2px solid #fd7013;
         color: #fd7013;
-        font-size: 12px;
+        font-size: calc(0.7rem + 0.5vw);
         text-decoration: none;
         padding: 3px 6px;
         display: inline-block;
@@ -353,8 +366,9 @@ section.tv {
             height: 464px;
           }
           figcaption {
-            margin-right: 200px;
-            text-decoration: none;
+            font-size: calc(0.5rem + 0.8vw);
+            display: flex;
+            justify-content: center;
           }
           i {
             position: absolute;
@@ -384,10 +398,10 @@ section.tv {
           text-decoration: none;
           display: block;
           text-align: center;
-          margin-left: 41px;
           border-radius: 6px;
           padding: 9px;
           font-weight: bold;
+          font-size: calc(0.5rem + 0.8vw);
           &:hover {
             background: #ffffff;
             border: 2px solid #fd7013;
@@ -408,7 +422,7 @@ section.tv {
         a {
           text-decoration: none;
           h2 {
-            font-size: 14px;
+            font-size: calc(0.5rem + 0.8vw);
             color: #222831;
             text-align: center;
             background: #ecf0f1;
@@ -456,19 +470,20 @@ section.tv {
 ///////////////////////////////section article//////////////////////////
 section.article {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
   .article-head {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     .article-title {
       h2 {
-        font-size: 23px;
+        font-size: calc(0.6rem + 0.8vw);
         text-align: center;
         font-weight: bold;
       }
       h5 {
-        font-size: 17px;
+        font-size: calc(0.5rem + 0.8vw);
         color: #929394;
         text-align: center;
       }
@@ -478,7 +493,7 @@ section.article {
       a {
         border: 2px solid #fd7013;
         color: #fd7013;
-        font-size: 12px;
+        font-size: calc(0.7rem + 0.5vw);
         text-decoration: none;
         padding: 3px 6px;
         display: inline-block;
@@ -509,7 +524,7 @@ section.article {
     }
   }
   .box-article h6 {
-    font-size: 14px;
+    font-size: calc(0.7rem + 0.5vw);
     text-align: center;
     padding: 15px 10px;
   }
@@ -518,8 +533,10 @@ section.article {
     color: #313131;
     font-weight: bolder;
     display: block;
+    font-size: calc(0.7rem + 0.4vw);
   }
   .btn-more a {
+    font-size: calc(1rem + 0.5vw);
     border: 0;
     border-top: 1px solid #fd7013;
     border-radius: 0 0 10px 10px;
@@ -533,7 +550,7 @@ section.article {
   .box-article p {
     color: #777;
     padding: 0 12px;
-    font-size: 13px;
+    font-size: calc(0.6rem + 0.4vw);
   }
   .box-article .btn-more a {
     background: #fd7013;
@@ -542,6 +559,7 @@ section.article {
     text-decoration: none;
     color: #ffffff;
     padding: 4px;
+    font-size: calc(0.7rem + 0.4vw);
   }
 
   .article-slider .owl-carousel .owl-nav button.owl-next,
@@ -578,7 +596,8 @@ section.article {
 ///////////////////////////////section adv///////////////////////////
 section.adv {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
   background: linear-gradient(to left, #222831, #4d5157);
   margin: 80px 0;
   .right-adv {
@@ -587,17 +606,18 @@ section.adv {
     padding-top: 45px;
     float: right;
     h2 {
-      font-size: 24px;
+      font-size: calc(0.5rem + 0.8vw);
       color: #fff;
       text-shadow: 2px 2px 3px #ddd;
     }
     h5 {
-      font-size: 16px;
+      font-size: calc(0.7rem + 0.4vw);
       margin-top: 30px;
       color: #adadad;
       text-shadow: 8px 8px 8px #000;
     }
     p {
+      font-size: calc(0.8rem + 0.4vw);
       padding-top: 20px;
       line-height: 39px;
       color: #cacaca;
@@ -615,6 +635,7 @@ section.adv {
       width: 30%;
       float: left;
       a {
+        font-size: calc(0.6rem + 0.4vw);
         text-decoration: none;
         text-shadow: 2px 3px 5px #000;
         background: linear-gradient(to left, #fd7013, #fdbf13);
@@ -654,19 +675,20 @@ section.adv {
 ///////////////////////////////section course///////////////////////////
 section.course {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
   .course-head {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     .course-title {
       h2 {
-        font-size: 23px;
+        font-size: calc(0.6rem + 0.8vw);
         text-align: center;
         font-weight: bold;
       }
       h5 {
-        font-size: 17px;
+        font-size: calc(0.5rem + 0.8vw);
         color: #929394;
         text-align: center;
       }
@@ -675,7 +697,7 @@ section.course {
       a {
         border: 2px solid #fd7013;
         color: #fd7013;
-        font-size: 12px;
+        font-size: calc(0.7rem + 0.5vw);
         text-decoration: none;
         padding: 3px 6px;
         display: inline-block;
@@ -717,6 +739,7 @@ section.course {
     padding: 15px 10px;
   }
   .box-course h6 a {
+    font-size: calc(0.7rem + 0.5vw);
     text-decoration: none;
     color: #313131;
     font-weight: bolder;
@@ -788,6 +811,7 @@ section.course {
   }
 
   .box-course .btn-more a {
+    font-size: calc(0.7rem + 0.4vw);
     background: #fd7013;
     display: block;
     text-align: center;
@@ -800,12 +824,13 @@ section.course {
 footer {
   cursor: pointer;
   background: #393e46;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.5rem + 0.5vw);
   float: right;
   padding-top: 50px;
   h3 {
     color: #eeeeee;
-    font-size: 20px;
+    font-size: calc(0.5rem + 1vw);
     margin-bottom: 22px;
     padding-bottom: 15px;
     border-bottom: 2px solid #fd7013;
@@ -816,6 +841,7 @@ footer {
     margin-left: 55px;
     p {
       color: #b4b4b4;
+      font-size: calc(0.6rem + 0.5vw);
       margin: 33px 0;
       text-align: justify;
       direction: rtl;

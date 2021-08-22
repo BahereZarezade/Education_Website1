@@ -1,4 +1,119 @@
-/* No CSS */
+@media (max-width: 500px) {
+  body nav.main-menu {
+    display: none;
+  }
+
+  body .search {
+    display: none;
+  }
+
+  body section.tv .box-tv .tv-right {
+    float: right;
+    width: 100%;
+    display: block;
+  }
+
+  body section.tv .box-tv .tv-right .first-post figure {
+    display: block;
+    margin-left: 0;
+  }
+
+  body section.tv .box-tv .tv-left {
+    float: left;
+    width: 100%;
+    display: block;
+  }
+
+  body section.tv .box-tv .tv-left .other-post {
+    float: left;
+    width: 100%;
+  }
+
+  body section.tv .box-tv .tv-left .other-post a h2 {
+    width: 100%;
+  }
+
+  body section.tv .box-tv .tv-left .other-post figure img {
+    width: 100%;
+  }
+
+  body section.adv .right-adv {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  body section.adv .left-adv {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  body footer .about,
+body .f-menu {
+    float: right;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 1024px) {
+  body nav.main-menu {
+    display: none;
+  }
+
+  body .search {
+    display: none;
+  }
+
+  body section.tv .box-tv .tv-right {
+    float: right;
+    width: 100%;
+    display: block;
+  }
+
+  body section.tv .box-tv .tv-right .first-post figure {
+    display: block;
+    margin-left: 0;
+  }
+
+  body section.tv .box-tv .tv-left {
+    float: left;
+    width: 100%;
+    display: block;
+  }
+
+  body section.tv .box-tv .tv-left .other-post {
+    float: left;
+    width: 100%;
+  }
+
+  body section.tv .box-tv .tv-left .other-post a h2 {
+    width: 100%;
+  }
+
+  body section.tv .box-tv .tv-left .other-post figure img {
+    width: 100%;
+  }
+
+  body section.adv .right-adv {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  body section.adv .left-adv {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  body footer .about,
+body .f-menu {
+    float: right;
+    width: 100%;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=responsive.css.map */
 
 /*# sourceMappingURL=responsive.css.map */

@@ -14,6 +14,7 @@
 }
 
 /* Main Styling */
+html,
 body {
   color: #b4b4b4;
   font-family: "Vazir" !important;
@@ -23,22 +24,26 @@ body {
   /* Utility Classes */
 }
 
+html .RightToLeft,
 body .RightToLeft {
   direction: rtl;
   text-align: right;
   font-size: 14px;
 }
 
+html a,
 body a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
+html i,
 body i {
   color: #fd7013;
 }
 
-body .fixed-top {
+html .fixed-top1,
+body .fixed-top1 {
   position: fixed;
   top: 0;
   right: 0;
@@ -46,8 +51,17 @@ body .fixed-top {
   z-index: 1030;
 }
 
+html .fixed-top2,
+body .fixed-top2 {
+  position: fixed;
+  top: 4rem;
+  right: 0;
+  left: 0;
+  z-index: 1040;
+}
+
 .container {
-  width: 1366px;
+  width: 1140px;
   text-align: right;
   margin: auto;
 }
@@ -68,7 +82,8 @@ body .fixed-top {
 }
 
 .top-menu {
-  width: 100%;
+  width: 100vw;
+  font-size: calc(2.4rem + 2vw);
   float: right;
   background: #393e46;
 }
@@ -84,7 +99,7 @@ body .fixed-top {
   float: right;
   list-style: none;
   margin: 10px 0px 0px 30px;
-  font-size: 12px;
+  font-size: calc(0.5rem + 0.5vw);
 }
 
 .top-menu .container .topbar-right ul li i {
@@ -186,7 +201,8 @@ body .fixed-top {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
+  font-size: calc(2.4rem + 1vw);
   float: right;
   background: #eeeeee;
   -webkit-box-shadow: 0px 1px 6px #adadad;
@@ -296,9 +312,10 @@ header .container .sign a i {
 
 section.box-slider {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(2.4rem + 1vw);
   direction: ltr;
-  margin-top: 4px;
+  margin-top: 8.5rem;
 }
 
 section.box-slider .owl-carousel .owl-item img {
@@ -333,7 +350,8 @@ section.box-slider span {
 
 section.tv {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
   margin-top: 30px;
 }
 
@@ -347,12 +365,12 @@ section.tv .tv-head .tv-title {
 }
 
 section.tv .tv-head .tv-title h2 {
-  font-size: 18px;
+  font-size: calc(0.6rem + 0.8vw);
   font-weight: bold;
 }
 
 section.tv .tv-head .tv-title h5 {
-  font-size: 15px;
+  font-size: calc(0.5rem + 0.8vw);
   color: #929394;
 }
 
@@ -364,7 +382,7 @@ section.tv .tv-head .tv-link {
 section.tv .tv-head .tv-link a {
   border: 2px solid #fd7013;
   color: #fd7013;
-  font-size: 12px;
+  font-size: calc(0.7rem + 0.5vw);
   text-decoration: none;
   padding: 3px 6px;
   display: inline-block;
@@ -406,8 +424,13 @@ section.tv .box-tv .tv-right .first-post figure img {
 }
 
 section.tv .box-tv .tv-right .first-post figure figcaption {
-  margin-right: 200px;
-  text-decoration: none;
+  font-size: calc(0.5rem + 0.8vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 section.tv .box-tv .tv-right .first-post figure i {
@@ -438,10 +461,10 @@ section.tv .box-tv .tv-right .more-tv a {
   text-decoration: none;
   display: block;
   text-align: center;
-  margin-left: 41px;
   border-radius: 6px;
   padding: 9px;
   font-weight: bold;
+  font-size: calc(0.5rem + 0.8vw);
 }
 
 section.tv .box-tv .tv-right .more-tv a:hover {
@@ -467,7 +490,7 @@ section.tv .box-tv .tv-left .other-post a {
 }
 
 section.tv .box-tv .tv-left .other-post a h2 {
-  font-size: 14px;
+  font-size: calc(0.5rem + 0.8vw);
   color: #222831;
   text-align: center;
   background: #ecf0f1;
@@ -514,7 +537,8 @@ section.tv .box-tv .tv-left .other-post figure:hover i {
 
 section.article {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
 }
 
 section.article .article-head {
@@ -531,13 +555,13 @@ section.article .article-head {
 }
 
 section.article .article-head .article-title h2 {
-  font-size: 23px;
+  font-size: calc(0.6rem + 0.8vw);
   text-align: center;
   font-weight: bold;
 }
 
 section.article .article-head .article-title h5 {
-  font-size: 17px;
+  font-size: calc(0.5rem + 0.8vw);
   color: #929394;
   text-align: center;
 }
@@ -545,7 +569,7 @@ section.article .article-head .article-title h5 {
 section.article .article-head .article-link a {
   border: 2px solid #fd7013;
   color: #fd7013;
-  font-size: 12px;
+  font-size: calc(0.7rem + 0.5vw);
   text-decoration: none;
   padding: 3px 6px;
   display: inline-block;
@@ -581,7 +605,7 @@ section.article .box-article img:hover {
 }
 
 section.article .box-article h6 {
-  font-size: 14px;
+  font-size: calc(0.7rem + 0.5vw);
   text-align: center;
   padding: 15px 10px;
 }
@@ -591,9 +615,11 @@ section.article .box-article h6 a {
   color: #313131;
   font-weight: bolder;
   display: block;
+  font-size: calc(0.7rem + 0.4vw);
 }
 
 section.article .btn-more a {
+  font-size: calc(1rem + 0.5vw);
   border: 0;
   border-top: 1px solid #fd7013;
   border-radius: 0 0 10px 10px;
@@ -609,7 +635,7 @@ section.article .box-article:hover .btn-more a {
 section.article .box-article p {
   color: #777;
   padding: 0 12px;
-  font-size: 13px;
+  font-size: calc(0.6rem + 0.4vw);
 }
 
 section.article .box-article .btn-more a {
@@ -619,6 +645,7 @@ section.article .box-article .btn-more a {
   text-decoration: none;
   color: #ffffff;
   padding: 4px;
+  font-size: calc(0.7rem + 0.4vw);
 }
 
 section.article .article-slider .owl-carousel .owl-nav button.owl-next,
@@ -661,7 +688,8 @@ section.article .owl-theme .owl-dots .owl-dot.active span {
 
 section.adv {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
   background: -webkit-gradient(linear, right top, left top, from(#222831), to(#4d5157));
   background: linear-gradient(to left, #222831, #4d5157);
   margin: 80px 0;
@@ -675,19 +703,20 @@ section.adv .right-adv {
 }
 
 section.adv .right-adv h2 {
-  font-size: 24px;
+  font-size: calc(0.5rem + 0.8vw);
   color: #fff;
   text-shadow: 2px 2px 3px #ddd;
 }
 
 section.adv .right-adv h5 {
-  font-size: 16px;
+  font-size: calc(0.7rem + 0.4vw);
   margin-top: 30px;
   color: #adadad;
   text-shadow: 8px 8px 8px #000;
 }
 
 section.adv .right-adv p {
+  font-size: calc(0.8rem + 0.4vw);
   padding-top: 20px;
   line-height: 39px;
   color: #cacaca;
@@ -710,6 +739,7 @@ section.adv .btn_more .btn_more_left {
 }
 
 section.adv .btn_more .btn_more_left a {
+  font-size: calc(0.6rem + 0.4vw);
   text-decoration: none;
   text-shadow: 2px 3px 5px #000;
   background: -webkit-gradient(linear, right top, left top, from(#fd7013), to(#fdbf13));
@@ -751,7 +781,8 @@ section.adv .left-adv figure img:hover {
 
 section.course {
   float: right;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.3rem + 1vw);
 }
 
 section.course .course-head {
@@ -768,13 +799,13 @@ section.course .course-head {
 }
 
 section.course .course-head .course-title h2 {
-  font-size: 23px;
+  font-size: calc(0.6rem + 0.8vw);
   text-align: center;
   font-weight: bold;
 }
 
 section.course .course-head .course-title h5 {
-  font-size: 17px;
+  font-size: calc(0.5rem + 0.8vw);
   color: #929394;
   text-align: center;
 }
@@ -782,7 +813,7 @@ section.course .course-head .course-title h5 {
 section.course .course-head .course-link a {
   border: 2px solid #fd7013;
   color: #fd7013;
-  font-size: 12px;
+  font-size: calc(0.7rem + 0.5vw);
   text-decoration: none;
   padding: 3px 6px;
   display: inline-block;
@@ -831,6 +862,7 @@ section.course .box-course h6 {
 }
 
 section.course .box-course h6 a {
+  font-size: calc(0.7rem + 0.5vw);
   text-decoration: none;
   color: #313131;
   font-weight: bolder;
@@ -909,6 +941,7 @@ section.course .teacher span {
 }
 
 section.course .box-course .btn-more a {
+  font-size: calc(0.7rem + 0.4vw);
   background: #fd7013;
   display: block;
   text-align: center;
@@ -920,14 +953,15 @@ section.course .box-course .btn-more a {
 footer {
   cursor: pointer;
   background: #393e46;
-  width: 100%;
+  width: 100vw;
+  font-size: calc(0.5rem + 0.5vw);
   float: right;
   padding-top: 50px;
 }
 
 footer h3 {
   color: #eeeeee;
-  font-size: 20px;
+  font-size: calc(0.5rem + 1vw);
   margin-bottom: 22px;
   padding-bottom: 15px;
   border-bottom: 2px solid #fd7013;
@@ -941,6 +975,7 @@ footer .about {
 
 footer .about p {
   color: #b4b4b4;
+  font-size: calc(0.6rem + 0.5vw);
   margin: 33px 0;
   text-align: justify;
   direction: rtl;
